@@ -1,0 +1,29 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Ontology-driven knowledge base for the library of the
+  Folkwang University of the Arts
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Andrea
+    family-names: Linxen
+    email: andrea.linxen@fernuni-hagen.de
+    affiliation: University in Hagen
+  - given-names: Vera-Maria
+    family-names: Schmidt
+    affiliation: Folkwang Universität der Künste
+    email: vera-maria.schmidt@folkwang-uni.de
+identifiers:
+  - type: url
+    value: >-
+      https://github.com/andrealinxen/Ontology-driven-knowledge-base-for-Folkwang-library
+repository-code: >-
+  https://github.com/andrealinxen/Ontology-driven-knowledge-base-for-Folkwang-library
+license: MIT
+version: '1.0'
+date-released: '2024-11-23'
