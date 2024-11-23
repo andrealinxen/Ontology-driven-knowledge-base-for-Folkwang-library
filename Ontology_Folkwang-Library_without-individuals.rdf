@@ -1,0 +1,794 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vera-maria.schmidt/ontologies/2023/9/untitled-ontology-3/"
+     xml:base="http://www.semanticweb.org/vera-maria.schmidt/ontologies/2023/9/untitled-ontology-3/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Ontology_Folkwang-Library="http://vera-m-s.de/MT/Ontology_Folkwang-Library#">
+    <owl:Ontology rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#employed -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#employed">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Team"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Folkwang_Library"/>
+        <rdfs:label>employed</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#maintains -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#maintains">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Team"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Social_Media"/>
+        <rdfs:label>maintains</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#manages_database -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#manages_database">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Team"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Databases"/>
+		<rdfs:label>manages database</rdfs:label>
+	</owl:ObjectProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#manages_item -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#manages_item">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Team"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+        <rdfs:label>manages item</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#offers_service -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#offers_service">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Team"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Services"/>
+        <rdfs:label>offers service</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#organises -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#organises">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Team"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Events"/>
+        <rdfs:label>organises</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#owns_item -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#owns_item">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Folkwang_Library"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+        <rdfs:label>owns item</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#owns_special_collection -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#owns_special_collection">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Folkwang_Library"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Special_Collection"/>
+        <rdfs:label>owns special collection</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#regulates -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#regulates">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Library_Policies"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Folkwang_Library"/>
+        <rdfs:label>regulates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#represents -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#represents">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Social_Media"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Folkwang_Library"/>
+        <rdfs:label>represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#thematises -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#thematises">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Thematic_Information"/>
+        <rdfs:label>thematises</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Link_Social-Media -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Link_Social-Media">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Social_Media"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Link to social media account</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Name_Social-Media -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Name_Social-Media">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Social_Media"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Name of the social media account</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Address_Branch -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Address_Branch">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Library_Branches"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Address of the library branch</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Annotation_Classification -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Annotation_Classification">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Thematic_Information"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Annotations on the classification</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Architecture -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Architecture">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Library_Branches"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Architecture of the library building</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Description_Library_Policy -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Description_Library_Policy">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Library_Policies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Description of the library policy</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Description_Database -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Description_Database">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Databases"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Description of the educational database or online service</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Description_Service -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Description_Service">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Services"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Description of the library service</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Description_Special_Collection -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Description_Special_Collection">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Special_Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Description of the special collection</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Description_Event -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Description_Event">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Events"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Description of the library event</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Name_Library_Policy -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Name_Library_Policy">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Library_Policies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Name of the library policy</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Name_Database -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Name_Database">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Databases"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Name of the educational database or the online service</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Name_Service -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Name_Service">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Services"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Name of the library service</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Name_Service_Contact -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Name_Service_Contact">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Folkwang_Library"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Name of the service contact</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Name_Special_Collection -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Name_Special_Collection">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Special_Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Name of the special collection</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Name_Event -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Name_Event">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Events"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Name of the library event</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Database_Type -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Database_Type">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Databases"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Type of the educational database</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Mail_Service -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Mail_Service">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Folkwang_Library"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Mail address service point</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Mail_Team -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Mail_Team">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Mail address</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#EZProxy_Database -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#EZProxy_Database">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Databases"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>EZProxy link to the educational database or the online service</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Publication_Year_Item -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Publication_Year_Item">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Publication year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Author_Item -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Author_Item">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Author</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#ISBN_Item -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#ISBN_Item">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>ISBN</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#ISSN_Item -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#ISSN_Item">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>ISSN</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Link_Library_Policy -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Link_Library_Policy">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Library_Policies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Link to the full text of the library policy</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Link_Service -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Link_Service">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Services"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Link to the library service or further information</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Media_Type_Item -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Media_Type_Item">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Media type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Last_Name_Team -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Last_Name_Team">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Last name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Name_Library_Branch -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Name_Library_Branch">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Library_Branches"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Name of the library branch</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Notation_Item -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Notation_Item">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Thematic notation of the item</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Notation_Classification -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Notation_Classification">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Thematic_Information"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Thematic notation of the classification</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Opening_Hours -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Opening_Hours">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Library_Branches"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Opening hours</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Platform_Social-Media -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Platform_Social-Media">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Social_Media"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Name of the social media platform</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Source_Classification -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Source_Classification">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Thematic_Information"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Source of the classification</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Main_Collection_Subject -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Main_Collection_Subject">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Library_Branches"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Main subject of the collection</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Keyword_Item -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Keyword_Item">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Keywords</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Series_Item -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Series_Item">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Series</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Service_Hours -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Service_Hours">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Library_Branches"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Service hours</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Call_Number_Item -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Call_Number_Item">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Item call number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Other_Person_Item -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Other_Person_Item">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Other person</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Location_Item -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Location_Item">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Physical item location</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Notation_Classification -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Notation_Classification">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Thematic_Information"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Notation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Phone_Service -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Phone_Service">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Folkwang_Library"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Phone number service telephone</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Phone_Team -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Phone_Team">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Phone number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Title_Item -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Title_Item">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Type_Event -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Type_Event">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Events"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Type of the library event</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Publisher_Item -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Publisher_Item">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Publisher</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Publication_Place_Item -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Publication_Place_Item">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Publication place</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#First_Name_Team -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#First_Name_Team">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>First name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Access_Database -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Access_Database">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Databases"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Access link to the database</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Expertise_Team -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Expertise_Team">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Area of expertise</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Branch_Item -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Branch_Item">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Owning library branch</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection">
+        <rdfs:label>Library collection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Databases -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Databases">
+        <rdfs:label>Educational databases and online services</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Events -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Events">
+        <rdfs:label>Library events</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Folkwang_Library -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Folkwang_Library">
+        <rdfs:label>Folkwang University of the Arts Library</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Library_Branches -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Library_Branches">
+        <rdfs:subClassOf rdf:resource="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Folkwang_Library"/>
+        <rdfs:label>Branches of the library</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Library_Policies -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Library_Policies">
+        <rdfs:label>Library policies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Services -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Services">
+        <rdfs:label>Library services</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Social_Media -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Social_Media">
+        <rdfs:label>Social media accounts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Special_Collection -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Special_Collection">
+        <rdfs:label>Special collections</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Team -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Team">
+        <rdfs:label>Library team</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontology_Folkwang-Library#Thematic_Information -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Thematic_Information">
+        <rdfs:label>Thematic information on the library's collection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Collection"/>
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Databases"/>
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Events"/>
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Folkwang_Library"/>
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Library_Policies"/>
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Services"/>
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Social_Media"/>
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Special_Collection"/>
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Team"/>
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontology_Folkwang-Library#Thematic_Information"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

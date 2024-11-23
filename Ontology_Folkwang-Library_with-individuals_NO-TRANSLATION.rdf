@@ -1,0 +1,1225 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vera-maria.schmidt/ontologies/2023/9/untitled-ontology-3/"
+     xml:base="http://www.semanticweb.org/vera-maria.schmidt/ontologies/2023/9/untitled-ontology-3/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Ontologie_Folkwang-Bibliothek="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#">
+    <owl:Ontology rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#angestellt -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#angestellt">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksteam"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Folkwang_Bibliothek"/>
+        <rdfs:label>angestellt bei</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#besitzt_Medium -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#besitzt_Medium">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Folkwang_Bibliothek"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+        <rdfs:label>besitzt Medien</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#besitzt_Sammlung -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#besitzt_Sammlung">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Folkwang_Bibliothek"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Sondersammlung"/>
+        <rdfs:label>besitzt Sondersammlung</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#bietet -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#bietet">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksteam"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Dienstleistungsangebot"/>
+        <rdfs:label>bietet an</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#regelt -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#regelt">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksrichtlinie"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Folkwang_Bibliothek"/>
+        <rdfs:label>regelt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#thematisiert -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#thematisiert">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Thematische_Information"/>
+        <rdfs:label>thematisiert</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#veranstaltet -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#veranstaltet">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksteam"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Veranstaltung"/>
+        <rdfs:comment>veranstaltet</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#verwaltet_Datenbank -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#verwaltet_Datenbank">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksteam"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Datenbank"/>
+        <rdfs:label>verwaltet Datenkbanken</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#verwaltet_Medium -->
+
+    <owl:ObjectProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#verwaltet_Medium">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksteam"/>
+        <rdfs:range rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+        <rdfs:label>verwaltet Medien</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Accountlink_Social-Media -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Accountlink_Social-Media">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Social_Media"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Accountlink zum Social Media Profil</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Accountname_Social-Media -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Accountname_Social-Media">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Social_Media"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Accountname des Social Media Profils</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Adresse_Zweigstelle -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Adresse_Zweigstelle">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Zweigstelle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Adresse der Zweigstelle</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Anmerkung_Systematik -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Anmerkung_Systematik">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Thematische_Information"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Anmerkung zur Systematikstelle</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Architektur -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Architektur">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Zweigstelle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Architektonische Besonderheiten des Bibliotheksgebäudes</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Beschreibung_Bibliotheksrichtlinie -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Beschreibung_Bibliotheksrichtlinie">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksrichtlinie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Beschreibung der Bibliotheksrichtlinie</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Beschreibung_Datenbank -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Beschreibung_Datenbank">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Datenbank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Beschreibung der Datenbank oder des Online-Angebots</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Beschreibung_Dienstleistung -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Beschreibung_Dienstleistung">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Dienstleistungsangebot"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Beschreibung der Dienstleistung</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Beschreibung_Sondersammlung -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Beschreibung_Sondersammlung">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Sondersammlung"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Beschreibung der Sondersammlung</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Beschreibung_Veranstaltung -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Beschreibung_Veranstaltung">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Veranstaltung"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Beschreibung der Veranstaltung</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bezeichnung_Bibliotheksrichtlinie -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bezeichnung_Bibliotheksrichtlinie">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksrichtlinie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Bezeichnung der Bibliotheksrichtlinie</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bezeichnung_Datenbank -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bezeichnung_Datenbank">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Datenbank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Bezeichnung der Datenbank oder des Online-Angebots</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bezeichnung_Dienstleistung -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bezeichnung_Dienstleistung">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Dienstleistungsangebot"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Bezeichnung der Dienstleistung</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bezeichnung_Service -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bezeichnung_Service">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Folkwang_Bibliothek"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Bezeichnung des Servicekontakts</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bezeichnung_Sondersammlung -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bezeichnung_Sondersammlung">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Sondersammlung"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Bezeichnung der Sondersammlung</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bezeichnung_Veranstaltung -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bezeichnung_Veranstaltung">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Veranstaltung"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Bezeichnung der Veranstaltung</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Datenbanktyp -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Datenbanktyp">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Datenbank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Datenbanktyp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#E-Mail-Adresse_Service -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#E-Mail-Adresse_Service">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Folkwang_Bibliothek"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>E-Mail-Adresse Servicetheke</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#E-Mail-Adresse_Team -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#E-Mail-Adresse_Team">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksteam"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>E-Mail-Adresse</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#EZProxy_Datenbank -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#EZProxy_Datenbank">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Datenbank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>EZProxy-Link zur Datenbank oder dem Online-Angebot</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Erscheinungsjahr_Medium -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Erscheinungsjahr_Medium">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Erscheinungsjahr</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Geistiger_Schoepfer_Medium -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Geistiger_Schoepfer_Medium">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Geistiger Schöpfer</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#ISBN_Medium -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#ISBN_Medium">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>ISBN</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#ISSN -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#ISSN">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>ISSN</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Link_Bibliotheksrichtlinie -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Link_Bibliotheksrichtlinie">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksrichtlinie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Link zum Volltext der Bibliotheksrichtlinie</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Link_Dienstleistung -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Link_Dienstleistung">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Dienstleistungsangebot"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Link zur Dienstleistung oder weiterführenden Informationen</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medientyp_Medium -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medientyp_Medium">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Medientyp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Nachname_Team -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Nachname_Team">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksteam"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Nachname</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Name_Zweigstelle -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Name_Zweigstelle">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Zweigstelle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Name der Zweigstelle</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Notation_Medium -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Notation_Medium">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Thematische Notation des Mediums</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Notation_Systematik -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Notation_Systematik">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Thematische_Information"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Notation der Systematik</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Oeffnungszeit -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Oeffnungszeit">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Zweigstelle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Öffnungszeiten</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Plattform_Social-Media -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Plattform_Social-Media">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Social_Media"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Bezeichnung der Social Media Plattform</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Quellsystematik_Systematik -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Quellsystematik_Systematik">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Thematische_Information"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Quellsystematik</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Sammlungsschwerpunkt -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Sammlungsschwerpunkt">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Zweigstelle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Sammlungsschwerpunkt</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Schlagwort_Medium -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Schlagwort_Medium">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Schlagwörter</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Schriftenreihe_Medium -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Schriftenreihe_Medium">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Schriftenreihe</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Servicezeit -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Servicezeit">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Zweigstelle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Servicezeiten</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Signatur_Medium -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Signatur_Medium">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Signatur</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Sonstige_beteiligte_Person_Medium -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Sonstige_beteiligte_Person_Medium">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Sonstige beteiligte Person</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Standort_Medium -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Standort_Medium">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Physischer Medienstandort</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Systematikstelle_Systematik -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Systematikstelle_Systematik">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Thematische_Information"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Systematikstelle</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Telefonnummer_Service -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Telefonnummer_Service">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Folkwang_Bibliothek"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Telefonnummer Servicetelefon</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Telefonnummer_Team -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Telefonnummer_Team">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksteam"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Telefonnummer</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Titel_Medium -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Titel_Medium">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Titel</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Typ_Veranstaltung -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Typ_Veranstaltung">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Veranstaltung"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Veranstaltungstyp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Verlag_Medium -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Verlag_Medium">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Verlag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Verlagsort_Medium -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Verlagsort_Medium">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Verlagsort</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Vorname_Team -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Vorname_Team">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksteam"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Vorname</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Zugangslink_Datenbank -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Zugangslink_Datenbank">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Datenbank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Zugangslink zur Datenbank oder dem Online-Angebot</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Zustaendigkeit_Team -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Zustaendigkeit_Team">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksteam"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Aufgaben im Team</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Zweigstelle_Medium -->
+
+    <owl:DatatypeProperty rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Zweigstelle_Medium">
+        <rdfs:domain rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Besitzende Zweigstelle des Mediums</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksrichtlinie -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksrichtlinie">
+        <rdfs:label>Bibliotheksrichtlinien</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksteam -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksteam">
+        <rdfs:label>Bibliotheksteam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Datenbank -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Datenbank">
+        <rdfs:label>Datenbanken und Online-Angebote</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Dienstleistungsangebot -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Dienstleistungsangebot">
+        <rdfs:label>Dienstleistungsangebote der Bibliothek</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Folkwang_Bibliothek -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Folkwang_Bibliothek">
+        <rdfs:label>Bibliothek der Folkwang Universität der Künste</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium">
+        <rdfs:label>Medien</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Social_Media -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Social_Media">
+        <rdfs:label>Social Media Accounts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Sondersammlung -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Sondersammlung">
+        <rdfs:label>Sondersammlungen der Bibliothek</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Thematische_Information -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Thematische_Information">
+        <rdfs:label>Thematische Informationen zu den Medien</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Veranstaltung -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Veranstaltung">
+        <rdfs:label>Veranstaltungen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Zweigstelle -->
+
+    <owl:Class rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Zweigstelle">
+        <rdfs:subClassOf rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Folkwang_Bibliothek"/>
+        <rdfs:label>Zweigstellen der Bibliothek</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+	<!-- ASB -->
+    <rdf:Description rdf:about="ASB-14788">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Thematische_Information"/>
+    <Ontologie_Folkwang-Bibliothek:Notation_Systematik>Xbo 6</Ontologie_Folkwang-Bibliothek:Notation_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>Brautstrauß / Floristik</Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>ASB</Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>
+  </rdf:Description>
+  <rdf:Description rdf:about="ASB-11995">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Thematische_Information"/>
+    <Ontologie_Folkwang-Bibliothek:Notation_Systematik>Vel 2</Ontologie_Folkwang-Bibliothek:Notation_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>Lymphgefäß / Krankheit</Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>ASB</Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>
+  </rdf:Description>
+  <rdf:Description rdf:about="ASB-15055">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Thematische_Information"/>
+    <Ontologie_Folkwang-Bibliothek:Notation_Systematik>Xdo 5</Ontologie_Folkwang-Bibliothek:Notation_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>Eisangeln</Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>ASB</Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>
+  </rdf:Description>
+  <rdf:Description rdf:about="ASB-09537">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Thematische_Information"/>
+    <Ontologie_Folkwang-Bibliothek:Notation_Systematik>Pgs</Ontologie_Folkwang-Bibliothek:Notation_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>Regionalliteratur / Deutsch / Führer</Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>ASB</Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>
+  </rdf:Description>
+  <rdf:Description rdf:about="ASB-07618">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Thematische_Information"/>
+    <Ontologie_Folkwang-Bibliothek:Notation_Systematik>Nek-Ney</Ontologie_Folkwang-Bibliothek:Notation_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>Zensur &lt;Pädagogik&gt; / Einzelne Unterrichtsfächer</Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>ASB</Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>
+  </rdf:Description>
+  
+  <!-- Bibliographische Metadaten --> 
+  
+   <rdf:Description rdf:about="990065193780206464">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+    <Ontologie_Folkwang-Bibliothek:Titel_Medium>Kinder können fernsehen vom sinnvollen Umgang mit dem Medium</Ontologie_Folkwang-Bibliothek:Titel_Medium>
+    <Ontologie_Folkwang-Bibliothek:Geistiger_Schoepfer_Medium>Rogge, Jan-Uwe 1947-</Ontologie_Folkwang-Bibliothek:Geistiger_Schoepfer_Medium>
+    <Ontologie_Folkwang-Bibliothek:Verlagsort_Medium>Reinbek bei Hamburg</Ontologie_Folkwang-Bibliothek:Verlagsort_Medium>
+    <Ontologie_Folkwang-Bibliothek:Verlag_Medium>Rowohlt</Ontologie_Folkwang-Bibliothek:Verlag_Medium>
+    <Ontologie_Folkwang-Bibliothek:Erscheinungsjahr_Medium>1993</Ontologie_Folkwang-Bibliothek:Erscheinungsjahr_Medium>
+    <Ontologie_Folkwang-Bibliothek:ISBN>3499185989; 9783499185984</Ontologie_Folkwang-Bibliothek:ISBN>
+    <Ontologie_Folkwang-Bibliothek:Schriftenreihe_Medium>Rororo 8598</Ontologie_Folkwang-Bibliothek:Schriftenreihe_Medium>
+    <Ontologie_Folkwang-Bibliothek:Notation_Medium>Ney</Ontologie_Folkwang-Bibliothek:Notation_Medium>
+    <Ontologie_Folkwang-Bibliothek:Medientyp_Medium>Book</Ontologie_Folkwang-Bibliothek:Medientyp_Medium>
+    <Ontologie_Folkwang-Bibliothek:Signatur_Medium>Ney / Rogg</Ontologie_Folkwang-Bibliothek:Signatur_Medium>
+    <Ontologie_Folkwang-Bibliothek:Standort_Medium>Freihand-A</Ontologie_Folkwang-Bibliothek:Standort_Medium>
+    <Ontologie_Folkwang-Bibliothek:Zweigstelle_Medium>Essen-Werden</Ontologie_Folkwang-Bibliothek:Zweigstelle_Medium>
+  </rdf:Description>
+  <rdf:Description rdf:about="990036648890206464">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+    <Ontologie_Folkwang-Bibliothek:Titel_Medium>Concerto D major for violin and orchestra op. 35</Ontologie_Folkwang-Bibliothek:Titel_Medium>
+    <Ontologie_Folkwang-Bibliothek:Geistiger_Schoepfer_Medium>Čajkovskij, Pëtr Ilʹič 1840-1893</Ontologie_Folkwang-Bibliothek:Geistiger_Schoepfer_Medium>
+    <Ontologie_Folkwang-Bibliothek:Sonstige_beteiligte_Person_Medium>Abraham, Gerald 1904-1988</Ontologie_Folkwang-Bibliothek:Sonstige_beteiligte_Person_Medium>
+    <Ontologie_Folkwang-Bibliothek:Verlagsort_Medium>London Zurich New York</Ontologie_Folkwang-Bibliothek:Verlagsort_Medium>
+    <Ontologie_Folkwang-Bibliothek:Verlag_Medium>Eulenburg</Ontologie_Folkwang-Bibliothek:Verlag_Medium>
+    <Ontologie_Folkwang-Bibliothek:Erscheinungsjahr_Medium>[ca. 1955]</Ontologie_Folkwang-Bibliothek:Erscheinungsjahr_Medium>
+    <Ontologie_Folkwang-Bibliothek:Notation_Medium>T 2</Ontologie_Folkwang-Bibliothek:Notation_Medium>
+    <Ontologie_Folkwang-Bibliothek:Medientyp_Medium>Music Score</Ontologie_Folkwang-Bibliothek:Medientyp_Medium>
+    <Ontologie_Folkwang-Bibliothek:Signatur_Medium>T 2 / TschaiP / Konz / CS 54</Ontologie_Folkwang-Bibliothek:Signatur_Medium>
+    <Ontologie_Folkwang-Bibliothek:Standort_Medium>Freihand-A</Ontologie_Folkwang-Bibliothek:Standort_Medium>
+    <Ontologie_Folkwang-Bibliothek:Zweigstelle_Medium>Essen-Werden</Ontologie_Folkwang-Bibliothek:Zweigstelle_Medium>
+  </rdf:Description>
+  <rdf:Description rdf:about="990135376140206464">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+    <Ontologie_Folkwang-Bibliothek:Titel_Medium>Combo spectacular pop hits, show songs, standards, film themes</Ontologie_Folkwang-Bibliothek:Titel_Medium>
+    <Ontologie_Folkwang-Bibliothek:Sonstige_beteiligte_Person_Medium>Gross, Arnold Bearb.; O'Brien, Bob</Ontologie_Folkwang-Bibliothek:Sonstige_beteiligte_Person_Medium>
+    <Ontologie_Folkwang-Bibliothek:Verlagsort_Medium>New York</Ontologie_Folkwang-Bibliothek:Verlagsort_Medium>
+    <Ontologie_Folkwang-Bibliothek:Verlag_Medium>Chappell</Ontologie_Folkwang-Bibliothek:Verlag_Medium>
+    <Ontologie_Folkwang-Bibliothek:Erscheinungsjahr_Medium>c 1973</Ontologie_Folkwang-Bibliothek:Erscheinungsjahr_Medium>
+    <Ontologie_Folkwang-Bibliothek:Notation_Medium>R 538; R 500</Ontologie_Folkwang-Bibliothek:Notation_Medium>
+    <Ontologie_Folkwang-Bibliothek:Medientyp_Medium>Music Score</Ontologie_Folkwang-Bibliothek:Medientyp_Medium>
+    <Ontologie_Folkwang-Bibliothek:Signatur_Medium>R 538 / Comb / 1</Ontologie_Folkwang-Bibliothek:Signatur_Medium>
+    <Ontologie_Folkwang-Bibliothek:Standort_Medium>Freihand-A</Ontologie_Folkwang-Bibliothek:Standort_Medium>
+    <Ontologie_Folkwang-Bibliothek:Zweigstelle_Medium>Essen-Werden</Ontologie_Folkwang-Bibliothek:Zweigstelle_Medium>
+  </rdf:Description>
+  <rdf:Description rdf:about="990156312720206464">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+    <Ontologie_Folkwang-Bibliothek:Titel_Medium>Die schöne Müllerin D 795 ; Liederzyklus nach Gedichten von Wilhelm Müller</Ontologie_Folkwang-Bibliothek:Titel_Medium>
+    <Ontologie_Folkwang-Bibliothek:Geistiger_Schoepfer_Medium>Schubert, Franz 1797-1828</Ontologie_Folkwang-Bibliothek:Geistiger_Schoepfer_Medium>
+    <Ontologie_Folkwang-Bibliothek:Sonstige_beteiligte_Person_Medium>Schubert, Franz 1797-1828; Müller, Wilhelm 1794-1827; Giesen, Hubert 1898-1980 Klavier; Wunderlich, Fritz 1930-1966 Tenor</Ontologie_Folkwang-Bibliothek:Sonstige_beteiligte_Person_Medium>
+    <Ontologie_Folkwang-Bibliothek:Verlagsort_Medium>Hamburg</Ontologie_Folkwang-Bibliothek:Verlagsort_Medium>
+    <Ontologie_Folkwang-Bibliothek:Verlag_Medium>Dt Grammophon</Ontologie_Folkwang-Bibliothek:Verlag_Medium>
+    <Ontologie_Folkwang-Bibliothek:Erscheinungsjahr_Medium>c 1988</Ontologie_Folkwang-Bibliothek:Erscheinungsjahr_Medium>
+    <Ontologie_Folkwang-Bibliothek:Notation_Medium>TA 20</Ontologie_Folkwang-Bibliothek:Notation_Medium>
+    <Ontologie_Folkwang-Bibliothek:Medientyp_Medium>Compact Disc</Ontologie_Folkwang-Bibliothek:Medientyp_Medium>
+    <Ontologie_Folkwang-Bibliothek:Signatur_Medium>CD 146 / 07</Ontologie_Folkwang-Bibliothek:Signatur_Medium>
+    <Ontologie_Folkwang-Bibliothek:Standort_Medium>Medienbereich-ABF</Ontologie_Folkwang-Bibliothek:Standort_Medium>
+    <Ontologie_Folkwang-Bibliothek:Zweigstelle_Medium>Essen-Werden</Ontologie_Folkwang-Bibliothek:Zweigstelle_Medium>
+  </rdf:Description>
+  <rdf:Description rdf:about="990021616360206464">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+    <Ontologie_Folkwang-Bibliothek:Titel_Medium>Nijinsky Gast aus einer anderen Welt</Ontologie_Folkwang-Bibliothek:Titel_Medium>
+    <Ontologie_Folkwang-Bibliothek:Geistiger_Schoepfer_Medium>Niehaus, Max</Ontologie_Folkwang-Bibliothek:Geistiger_Schoepfer_Medium>
+    <Ontologie_Folkwang-Bibliothek:Sonstige_beteiligte_Person_Medium>Nižinskij, Vaclav F. 1889-1950</Ontologie_Folkwang-Bibliothek:Sonstige_beteiligte_Person_Medium>
+    <Ontologie_Folkwang-Bibliothek:Verlagsort_Medium>München</Ontologie_Folkwang-Bibliothek:Verlagsort_Medium>
+    <Ontologie_Folkwang-Bibliothek:Verlag_Medium>Prestel-Verl</Ontologie_Folkwang-Bibliothek:Verlag_Medium>
+    <Ontologie_Folkwang-Bibliothek:Erscheinungsjahr_Medium>1961</Ontologie_Folkwang-Bibliothek:Erscheinungsjahr_Medium>
+    <Ontologie_Folkwang-Bibliothek:Schlagwort_Medium>Nižinskij, Vaclav F.</Ontologie_Folkwang-Bibliothek:Schlagwort_Medium>
+    <Ontologie_Folkwang-Bibliothek:Notation_Medium>Scb 3</Ontologie_Folkwang-Bibliothek:Notation_Medium>
+    <Ontologie_Folkwang-Bibliothek:Medientyp_Medium>Book</Ontologie_Folkwang-Bibliothek:Medientyp_Medium>
+    <Ontologie_Folkwang-Bibliothek:Signatur_Medium>Scb 3 / Nij</Ontologie_Folkwang-Bibliothek:Signatur_Medium>
+    <Ontologie_Folkwang-Bibliothek:Standort_Medium>Freihand-A</Ontologie_Folkwang-Bibliothek:Standort_Medium>
+    <Ontologie_Folkwang-Bibliothek:Zweigstelle_Medium>Essen-Werden</Ontologie_Folkwang-Bibliothek:Zweigstelle_Medium>
+  </rdf:Description>
+  
+  <!-- Bibliotheksrichtlinie -->
+  
+    <rdf:Description rdf:about="BRI-4">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksrichtlinie"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Bibliotheksrichtlinie>4 Wochen, beliebig oft verlängerbar bis zu einer Maximaldauer von 180 Tagen: Bücher, Noten, CDs &amp; CD-ROMs, DVDs, Schallplatten, zu Büchern und Noten gehörende CDs, DVDs, CD-ROMs, Schallplatten, Audio- oder Videokassetten (Medienkombinationen) |&#13;&#13;
+1 Woche, nicht verlängerbar: Medien eines Semesterapparats (nur für Seminarteilnehmer*innen) |&#13;&#13;
+1 Tag, nicht verlängerbar, Tagesausleihe: Zeitschriftenbände und -hefte, Nachschlagewerke, Wörterbücher</Ontologie_Folkwang-Bibliothek:Beschreibung_Bibliotheksrichtlinie>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Bibliotheksrichtlinie>Leihfristen</Ontologie_Folkwang-Bibliothek:Bezeichnung_Bibliotheksrichtlinie>
+  </rdf:Description>
+  <rdf:Description rdf:about="BRI-3">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksrichtlinie"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Bibliotheksrichtlinie>Eine Ausleihe von Medien des Ausleihbestands ist während der gesamten Öffnungszeit des Hauses möglich. Medien können ausschließlich unter Vorlage eines gültigen Bibliotheksausweises ausgeliehen werden.&#13;&#13;
+Bücher, Noten, CDs, DVDs und Schallplatten können ausgeliehen werden, sofern sie nicht zum Präsenzbestand der Bibliothek gehören. Medien des Präsenzbestands können in Einzelfällen für den Tag ausgeliehen werden.&#13;&#13;
+Ein Teil der Medien befindet sich im Magazin und muss zuerst von Ihnen über den Katalog bestellt werden. Die von Ihnen bestellten Medien werden sofort herausgesucht und bereitgestellt.&#13;&#13;
+CDs und DVDs werden in einem separaten nur für Mitarbeiter*innen zugänglichen Medienbereich aufbewahrt. Teilen Sie uns bitte einfach an der Ausleihtheke die Signatur der von Ihnen gewünschten Medien mit und wir suchen diese dann für Sie heraus.</Ontologie_Folkwang-Bibliothek:Beschreibung_Bibliotheksrichtlinie>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Bibliotheksrichtlinie>Ausleihkonditionen</Ontologie_Folkwang-Bibliothek:Bezeichnung_Bibliotheksrichtlinie>
+  </rdf:Description>
+  <rdf:Description rdf:about="BRI-1">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksrichtlinie"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Bibliotheksrichtlinie>Die Benutzungsordnung regelt das rechtliche Benutzungsverhältnis zwischen Bibliothek und Bibliotheksbenutzer*innen, insbesondere die Rechte und Pflichten der Nutzer*innen und die Ausleihmodalitäten.&#13;&#13;
+Mit Betreten der Räume der Bibliothek erkennen Sie die Benutzungsordnung an. Die aktuelle Fassung der Benutzungsordnung liegt in der Bibliothek aus und wird auf den Webseiten sowie im Verkündungsblatt der Folkwang Universität der Künste veröffentlicht.</Ontologie_Folkwang-Bibliothek:Beschreibung_Bibliotheksrichtlinie>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Bibliotheksrichtlinie>Benutzungsordnung für die Bibliothek der Folkwang Universität der Künste</Ontologie_Folkwang-Bibliothek:Bezeichnung_Bibliotheksrichtlinie>
+    <Ontologie_Folkwang-Bibliothek:Link_Bibliotheksrichtlinie>https://www.folkwang-uni.de/fileadmin/medien/Die%20Hochschule/PDFs/Verwaltung/Ordnungen/Chronologisch/2012/Nr%20%20104%20Benutzungsordnung%20Bibliothek_aktuell.pdf</Ontologie_Folkwang-Bibliothek:Link_Bibliotheksrichtlinie>
+  </rdf:Description>
+  <rdf:Description rdf:about="BRI-2">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksrichtlinie"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Bibliotheksrichtlinie>Die Nutzung der Bibliothek ist gebührenfrei. Bei Überschreiten der Leihfrist fallen jedoch Säumnisgebühren an. Diese sind in der Gebührenordnung der Bibliothek geregelt. Die aktuelle Fassung der Gebührenordnung hängt in der Bibliothek aus und wird auf den Webseiten sowie im Verkündungsblatt der Folkwang Universität der Künste veröffentlicht.</Ontologie_Folkwang-Bibliothek:Beschreibung_Bibliotheksrichtlinie>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Bibliotheksrichtlinie>Gebührenordnung für die Bibliothek der Folkwang Universität der Künste</Ontologie_Folkwang-Bibliothek:Bezeichnung_Bibliotheksrichtlinie>
+    <Ontologie_Folkwang-Bibliothek:Link_Bibliotheksrichtlinie>https://www.folkwang-uni.de/fileadmin/medien/Die%20Hochschule/PDFs/Verwaltung/Ordnungen/Chronologisch/2014/Nr._198_Gebu__hrenordnung_Bibliothek.pdf</Ontologie_Folkwang-Bibliothek:Link_Bibliotheksrichtlinie>
+  </rdf:Description>
+  
+  
+  <!-- Bibliotheksteam -->
+  
+   <rdf:Description rdf:about="TEA-7">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksteam"/>
+    <Ontologie_Folkwang-Bibliothek:Zustaendigkeit_Team>Bibliothek | Technische Medienbearbeitung</Ontologie_Folkwang-Bibliothek:Zustaendigkeit_Team>
+    <Ontologie_Folkwang-Bibliothek:E-Mail-Adresse_Team>lehnen@folkwang-uni.de</Ontologie_Folkwang-Bibliothek:E-Mail-Adresse_Team>
+    <Ontologie_Folkwang-Bibliothek:Nachname_Team>Lehnen</Ontologie_Folkwang-Bibliothek:Nachname_Team>
+    <Ontologie_Folkwang-Bibliothek:Vorname_Team>Christian</Ontologie_Folkwang-Bibliothek:Vorname_Team>
+    <Ontologie_Folkwang-Bibliothek:Telefonnummer_Team>02014903387</Ontologie_Folkwang-Bibliothek:Telefonnummer_Team>
+  </rdf:Description>
+  <rdf:Description rdf:about="TEA-8">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksteam"/>
+    <Ontologie_Folkwang-Bibliothek:Zustaendigkeit_Team>Bibliothek | Technische Medienbearbeitung</Ontologie_Folkwang-Bibliothek:Zustaendigkeit_Team>
+    <Ontologie_Folkwang-Bibliothek:E-Mail-Adresse_Team>fuhrmann@folkwang-uni.de</Ontologie_Folkwang-Bibliothek:E-Mail-Adresse_Team>
+    <Ontologie_Folkwang-Bibliothek:Nachname_Team>Fuhrmann</Ontologie_Folkwang-Bibliothek:Nachname_Team>
+    <Ontologie_Folkwang-Bibliothek:Vorname_Team>Susanne</Ontologie_Folkwang-Bibliothek:Vorname_Team>
+    <Ontologie_Folkwang-Bibliothek:Telefonnummer_Team>02014903245</Ontologie_Folkwang-Bibliothek:Telefonnummer_Team>
+  </rdf:Description>
+  <rdf:Description rdf:about="TEA-2">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksteam"/>
+    <Ontologie_Folkwang-Bibliothek:Zustaendigkeit_Team>Bibliothek | Stellvertretende Leitung, Digitale Informationsdienste</Ontologie_Folkwang-Bibliothek:Zustaendigkeit_Team>
+    <Ontologie_Folkwang-Bibliothek:E-Mail-Adresse_Team>vera-maria.schmidt@folkwang-uni.de</Ontologie_Folkwang-Bibliothek:E-Mail-Adresse_Team>
+    <Ontologie_Folkwang-Bibliothek:Nachname_Team>Schmidt</Ontologie_Folkwang-Bibliothek:Nachname_Team>
+    <Ontologie_Folkwang-Bibliothek:Vorname_Team>Vera-Maria</Ontologie_Folkwang-Bibliothek:Vorname_Team>
+    <Ontologie_Folkwang-Bibliothek:Telefonnummer_Team>02014903242</Ontologie_Folkwang-Bibliothek:Telefonnummer_Team>
+  </rdf:Description>
+  <rdf:Description rdf:about="TEA-3">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksteam"/>
+    <Ontologie_Folkwang-Bibliothek:Zustaendigkeit_Team>Bibliothek | Ausleihe, Auskunft, Hilfskräfte</Ontologie_Folkwang-Bibliothek:Zustaendigkeit_Team>
+    <Ontologie_Folkwang-Bibliothek:E-Mail-Adresse_Team>junge@folkwang-uni.de</Ontologie_Folkwang-Bibliothek:E-Mail-Adresse_Team>
+    <Ontologie_Folkwang-Bibliothek:Nachname_Team>Junge</Ontologie_Folkwang-Bibliothek:Nachname_Team>
+    <Ontologie_Folkwang-Bibliothek:Vorname_Team>Monika</Ontologie_Folkwang-Bibliothek:Vorname_Team>
+    <Ontologie_Folkwang-Bibliothek:Telefonnummer_Team>02014903243</Ontologie_Folkwang-Bibliothek:Telefonnummer_Team>
+  </rdf:Description>
+  <rdf:Description rdf:about="TEA-5">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksteam"/>
+    <Ontologie_Folkwang-Bibliothek:Zustaendigkeit_Team>Bibliothek | Fernleihe, Erwerbung, Fachauskunft</Ontologie_Folkwang-Bibliothek:Zustaendigkeit_Team>
+    <Ontologie_Folkwang-Bibliothek:E-Mail-Adresse_Team>julia.schmidt@folkwang-uni.de</Ontologie_Folkwang-Bibliothek:E-Mail-Adresse_Team>
+    <Ontologie_Folkwang-Bibliothek:Nachname_Team>Schmidt</Ontologie_Folkwang-Bibliothek:Nachname_Team>
+    <Ontologie_Folkwang-Bibliothek:Vorname_Team>Julia</Ontologie_Folkwang-Bibliothek:Vorname_Team>
+    <Ontologie_Folkwang-Bibliothek:Telefonnummer_Team>02014903379</Ontologie_Folkwang-Bibliothek:Telefonnummer_Team>
+  </rdf:Description>
+  
+  <!-- Datenbanken -->
+  
+   <rdf:Description rdf:about="DBO-28">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Datenbank"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Datenbank>Internationales Repertorium der Musikliteratur. Internationale Musikbibliographie und Musikenzyklopädien, ergänzt durch Musikzeitschriften im Volltext. Enthält u.a. Fétis, Eitner, Handbuch der musikalischen Terminologie, Riemann und Komponisten der Gegenwart.</Ontologie_Folkwang-Bibliothek:Beschreibung_Datenbank>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Datenbank>Répertoire International de Littérature Musicale (RILM)</Ontologie_Folkwang-Bibliothek:Bezeichnung_Datenbank>
+    <Ontologie_Folkwang-Bibliothek:Datenbanktyp>Nachschlagewerk</Ontologie_Folkwang-Bibliothek:Datenbanktyp>
+    <Ontologie_Folkwang-Bibliothek:EZProxy_Datenbank>RILM Music Encyclopedias: http://ez.folkwang-uni.de:2048/login?url=http://search.ebscohost.com/login.aspx, RILM Abstracts with full text: http://ez.folkwang-uni.de:2048/login?url=http://search.ebscohost.com/login.aspx</Ontologie_Folkwang-Bibliothek:EZProxy_Datenbank>
+    <Ontologie_Folkwang-Bibliothek:Zugangslink_Datenbank>RILM Music Encyclopedias: http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;custid=ns192663&amp;profile=ehost&amp;defaultdb=ril&amp;groupid=main, RILM Abstracts with full text: http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;custid=ns192663&amp;profile=ehost&amp;defaultdb=ril&amp;groupid=main</Ontologie_Folkwang-Bibliothek:Zugangslink_Datenbank>
+  </rdf:Description>
+  <rdf:Description rdf:about="DBO-25">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Datenbank"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Datenbank>Oxford Music Online vereint die Nachschlagewerke "The Oxford Dictionary of Music", "Grove Music Online" und "The Oxford Companion to Music" unter einer gemeinsamen Oberfläche.</Ontologie_Folkwang-Bibliothek:Beschreibung_Datenbank>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Datenbank>Oxford Music Online</Ontologie_Folkwang-Bibliothek:Bezeichnung_Datenbank>
+    <Ontologie_Folkwang-Bibliothek:Datenbanktyp>Nachschlagewerk</Ontologie_Folkwang-Bibliothek:Datenbanktyp>
+    <Ontologie_Folkwang-Bibliothek:EZProxy_Datenbank>https://ez.folkwang-uni.de/login?url=https://www.oxfordmusiconline.com</Ontologie_Folkwang-Bibliothek:EZProxy_Datenbank>
+    <Ontologie_Folkwang-Bibliothek:Zugangslink_Datenbank>https://www.oxfordmusiconline.com/</Ontologie_Folkwang-Bibliothek:Zugangslink_Datenbank>
+  </rdf:Description>
+  <rdf:Description rdf:about="DBO-26">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Datenbank"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Datenbank>Gemeinfreies Bildmaterial der Datenbank Prometheus</Ontologie_Folkwang-Bibliothek:Beschreibung_Datenbank>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Datenbank>Prometheus - das verteilte digitale Bildarchiv für Forschung und Lehre</Ontologie_Folkwang-Bibliothek:Bezeichnung_Datenbank>
+    <Ontologie_Folkwang-Bibliothek:Datenbanktyp>Sonstige</Ontologie_Folkwang-Bibliothek:Datenbanktyp>
+    <Ontologie_Folkwang-Bibliothek:Zugangslink_Datenbank>https://prometheus.uni-koeln.de/de/sources/open_access</Ontologie_Folkwang-Bibliothek:Zugangslink_Datenbank>
+  </rdf:Description>
+  <rdf:Description rdf:about="DBO-09">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Datenbank"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Datenbank>Der Fachinformationsdienst (FID) Kunst, Forografie, Design ist das zentrale Informationsportal für Kunstwissenschaftent. Es wird von der DFG gefördert und von der UB Heidelberg und der SLUB Dresden betrieben.</Ontologie_Folkwang-Bibliothek:Beschreibung_Datenbank>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Datenbank>FID Kunst, Fotografie, Design</Ontologie_Folkwang-Bibliothek:Bezeichnung_Datenbank>
+    <Ontologie_Folkwang-Bibliothek:Datenbanktyp>Fachinformationsdienst</Ontologie_Folkwang-Bibliothek:Datenbanktyp>
+    <Ontologie_Folkwang-Bibliothek:Zugangslink_Datenbank>https://www.arthistoricum.net/</Ontologie_Folkwang-Bibliothek:Zugangslink_Datenbank>
+  </rdf:Description>
+  <rdf:Description rdf:about="DBO-12">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Datenbank"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Datenbank>Volltextdatenbank/E-Book zum Lernen und Lehren an Hochschulen.</Ontologie_Folkwang-Bibliothek:Beschreibung_Datenbank>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Datenbank>Handbuch Qualität Studium und Lehre</Ontologie_Folkwang-Bibliothek:Bezeichnung_Datenbank>
+    <Ontologie_Folkwang-Bibliothek:Datenbanktyp>Volltextdatenbank</Ontologie_Folkwang-Bibliothek:Datenbanktyp>
+    <Ontologie_Folkwang-Bibliothek:Zugangslink_Datenbank>https://www.hqsl-bibliothek.de/</Ontologie_Folkwang-Bibliothek:Zugangslink_Datenbank>
+  </rdf:Description>
+  
+  <!-- Dienstleistungen -->
+
+ <rdf:Description rdf:about="DLA-30">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Dienstleistungsangebot"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Dienstleistung>Wir freuen uns sehr darüber, dass Sie bereit sind, sich für unsere Nutzer*innen von Ihren Schätzen zu trennen. Worüber wir uns besonders freuen sind: Neuerscheinungen von Büchern in allen relevanten Gebieten (Pädagogik, Musik, Theater, Tanz, Gestaltung, Fotografie, usw.), Noten, CDs, DVDs und BluRays, wenn sie in gutem Zustand sind, Neuerscheinungen von Folkwängler*innen&#13;&#13;
+Bitte melden Sie sich mit möglichst detaillierten Angaben zu Ihrem Geschenk, vorzugsweise per E-Mail, bei der Bibliotheksleiterin. Einzelne Geschenke können Sie gerne zu Servicezeiten in der Bibliothek vorbeibringen. &#13;&#13;
+Leider können wir aus verschiedenen Gründen nicht alle wohlgemeinten Geschenke annehmen.</Ontologie_Folkwang-Bibliothek:Beschreibung_Dienstleistung>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Dienstleistung>Schenkungen</Ontologie_Folkwang-Bibliothek:Bezeichnung_Dienstleistung>
+    <Ontologie_Folkwang-Bibliothek:Link_Dienstleistung>dina.hess@folkwang-uni.de</Ontologie_Folkwang-Bibliothek:Link_Dienstleistung>
+  </rdf:Description>
+  <rdf:Description rdf:about="DLA-43">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Dienstleistungsangebot"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Dienstleistung>Ein Abspielgerät für Videokassetten steht Ihnen in Medienzelle 6 zur Verfügung.</Ontologie_Folkwang-Bibliothek:Beschreibung_Dienstleistung>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Dienstleistung>Wiedergabe von Videokassetten</Ontologie_Folkwang-Bibliothek:Bezeichnung_Dienstleistung>
+  </rdf:Description>
+  <rdf:Description rdf:about="DLA-24">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Dienstleistungsangebot"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Dienstleistung>CDs, DVDs, Audio- und Videokassetten (und vereinzelte Zeitschriften) finden sich im Medienbereich der Bibliothek, der nur für Bibliotheksmitarbeiter*innen zugänglich ist. Teilen Sie uns die Signatur für die gewünschten Medien an der Ausleihtheke mit und wir suchen Ihnen das Medium gerne heraus. Die Signatur können Sie im Katalog recherchieren. Alternativ befindet sich dort auch direkt ein Bestellbutton unter der Standortanzeige.</Ontologie_Folkwang-Bibliothek:Beschreibung_Dienstleistung>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Dienstleistung>Medienbereich und Bestellungen aus dem Medienbereich</Ontologie_Folkwang-Bibliothek:Bezeichnung_Dienstleistung>
+  </rdf:Description>
+  <rdf:Description rdf:about="DLA-39">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Dienstleistungsangebot"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Dienstleistung>Benötigen Sie Medien, die ausgeliehen sind, können Sie diese ganz einfach für sich vormerken (reservieren). Der oder die Entleiher*in kann das Medium dann nicht verlängern und Sie erhalten eine E-Mail, sobald Sie das zurückgegebene Medium an der Ausleihtheke abholen können.&#13;&#13;
+Entliehene Medien erkennen Sie in der Detailansicht im Katalog an dem roten Datum im Feld „Fällig am“, sowie an dem Bestellbutton im gleichen Feld. &#13;&#13;
+Sie erhalten eine Benachrichtigung, wenn das Medium an der Ausleihtheke für Sie zur Abholung bereitgestellt ist. Nach 10 Tagen wird die Vormerkung automatisch gelöscht und das Medium wieder in den Bestand zurückgestellt.&#13;&#13;
+Nicht mehr benötigte oder versehentlich angelegte Vormerkungen können nicht von Ihnen selbst gelöscht werden. Bitte geben Sie uns in diesem Fall kurz Bescheid  (gerne auch telefonisch oder per E-Mail an bibliothek@folkwang-uni.de).</Ontologie_Folkwang-Bibliothek:Beschreibung_Dienstleistung>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Dienstleistung>Vormerkungen</Ontologie_Folkwang-Bibliothek:Bezeichnung_Dienstleistung>
+  </rdf:Description>
+  <rdf:Description rdf:about="DLA-02">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Dienstleistungsangebot"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Dienstleistung>Für den Besuch der Bibliothek ist keine Anmeldung nötig. Möchten Sie jedoch Medien aus der Bibliothek ausleihen, so benötigen Sie einen Bibliotheksausweis.&#13;&#13;
+Für Studierende und Lehrende an der Folkwang Universität der Künste stellt der Studierenden- bzw. Dienstausweis (Folkwangkarte) gleichzeitig den Bibliotheksausweis dar. Dieser muss vor der ersten Ausleihe vom Bibliothekspersonal freigeschaltet werden. Kommen Sie dafür bitte zu Servicezeiten in die Bibliothek.&#13;&#13;
+Als Folkwang-Angehörige*r oder Gast an Folkwang können Sie zu Servicezeiten einen Bibliotheksausweis beantragen.</Ontologie_Folkwang-Bibliothek:Beschreibung_Dienstleistung>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Dienstleistung>Anmeldung</Ontologie_Folkwang-Bibliothek:Bezeichnung_Dienstleistung>
+  </rdf:Description>
+  
+  <!-- Folkwang Bibliothek --> 
+  
+    <rdf:Description rdf:about="BIB-1">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Folkwang_Bibliothek"/>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Service>Auskunftstheke, Bibliothek allgemein</Ontologie_Folkwang-Bibliothek:Bezeichnung_Service>
+    <Ontologie_Folkwang-Bibliothek:E-Mail-Adresse_Service>bibliothek@folkwang-uni.de</Ontologie_Folkwang-Bibliothek:E-Mail-Adresse_Service>
+    <Ontologie_Folkwang-Bibliothek:Telefonnummer_Service>0201-4903241</Ontologie_Folkwang-Bibliothek:Telefonnummer_Service>
+  </rdf:Description>
+  <rdf:Description rdf:about="BIB-3">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Folkwang_Bibliothek"/>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Service>Bestellwunsch</Ontologie_Folkwang-Bibliothek:Bezeichnung_Service>
+    <Ontologie_Folkwang-Bibliothek:E-Mail-Adresse_Service>bestellwunsch@folkwang-uni.de</Ontologie_Folkwang-Bibliothek:E-Mail-Adresse_Service>
+  </rdf:Description>
+  <rdf:Description rdf:about="BIB-2">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Folkwang_Bibliothek"/>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Service>Erwerbungsabteilung</Ontologie_Folkwang-Bibliothek:Bezeichnung_Service>
+    <Ontologie_Folkwang-Bibliothek:E-Mail-Adresse_Service>erwerbung@folkwang-uni.de</Ontologie_Folkwang-Bibliothek:E-Mail-Adresse_Service>
+  </rdf:Description>
+  <rdf:Description rdf:about="BIB-4">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Folkwang_Bibliothek"/>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Service>Ausleihteam</Ontologie_Folkwang-Bibliothek:Bezeichnung_Service>
+    <Ontologie_Folkwang-Bibliothek:E-Mail-Adresse_Service>ausleihe@folkwang-uni.de</Ontologie_Folkwang-Bibliothek:E-Mail-Adresse_Service>
+  </rdf:Description>
+  
+  <!-- Folkwangsystematik -->
+  
+  <rdf:Description rdf:about="SYS-0421">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Thematische_Information"/>
+    <Ontologie_Folkwang-Bibliothek:Notation_Systematik>TW 1</Ontologie_Folkwang-Bibliothek:Notation_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>Einführungen in musikgeschichtliche Epochen</Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>Tonträger</Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Anmerkung_Systematik>Hier auch Einführungen in die elektronische Musik, Jazz, Rock - und Popmusik</Ontologie_Folkwang-Bibliothek:Anmerkung_Systematik>
+  </rdf:Description>
+  <rdf:Description rdf:about="SYS-0610">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Thematische_Information"/>
+    <Ontologie_Folkwang-Bibliothek:Notation_Systematik>D</Ontologie_Folkwang-Bibliothek:Notation_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>Orgel / Harmonium / Elektronische Tasteninstrumente</Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>Noten</Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>
+  </rdf:Description>
+  <rdf:Description rdf:about="SYS-0727">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Thematische_Information"/>
+    <Ontologie_Folkwang-Bibliothek:Notation_Systematik>H 10</Ontologie_Folkwang-Bibliothek:Notation_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>Blockflöte</Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>Noten</Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>
+  </rdf:Description>
+  <rdf:Description rdf:about="SYS-0872">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Thematische_Information"/>
+    <Ontologie_Folkwang-Bibliothek:Notation_Systematik>K 30</Ontologie_Folkwang-Bibliothek:Notation_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>Quartette für Holzblasinstrumente</Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>Noten</Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>
+  </rdf:Description>
+  <rdf:Description rdf:about="SYS-1923">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Thematische_Information"/>
+    <Ontologie_Folkwang-Bibliothek:Notation_Systematik>Rml 211</Ontologie_Folkwang-Bibliothek:Notation_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>Architektur</Ontologie_Folkwang-Bibliothek:Systematikstelle_Systematik>
+    <Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>Kunst</Ontologie_Folkwang-Bibliothek:Quellsystematik_Systematik>
+  </rdf:Description>
+  
+  <!-- Social Media --> 
+  
+  <rdf:Description rdf:about="SOM-3">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Social_Media"/>
+    <Ontologie_Folkwang-Bibliothek:Accountlink_Social-Media>https://www.facebook.com/BKunste</Ontologie_Folkwang-Bibliothek:Accountlink_Social-Media>
+    <Ontologie_Folkwang-Bibliothek:Accountname_Social-Media>BKunste</Ontologie_Folkwang-Bibliothek:Accountname_Social-Media>
+    <Ontologie_Folkwang-Bibliothek:Plattform_Social-Media>Facebook</Ontologie_Folkwang-Bibliothek:Plattform_Social-Media>
+  </rdf:Description>
+  <rdf:Description rdf:about="SOM-2">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Social_Media"/>
+    <Ontologie_Folkwang-Bibliothek:Accountlink_Social-Media>https://twitter.com/BKunste</Ontologie_Folkwang-Bibliothek:Accountlink_Social-Media>
+    <Ontologie_Folkwang-Bibliothek:Accountname_Social-Media>BKunste</Ontologie_Folkwang-Bibliothek:Accountname_Social-Media>
+    <Ontologie_Folkwang-Bibliothek:Plattform_Social-Media>X</Ontologie_Folkwang-Bibliothek:Plattform_Social-Media>
+  </rdf:Description>
+  <rdf:Description rdf:about="SOM-1">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Social_Media"/>
+    <Ontologie_Folkwang-Bibliothek:Accountlink_Social-Media>https://twitter.com/BKunste</Ontologie_Folkwang-Bibliothek:Accountlink_Social-Media>
+    <Ontologie_Folkwang-Bibliothek:Accountname_Social-Media>BKunste</Ontologie_Folkwang-Bibliothek:Accountname_Social-Media>
+    <Ontologie_Folkwang-Bibliothek:Plattform_Social-Media>Twitter</Ontologie_Folkwang-Bibliothek:Plattform_Social-Media>
+  </rdf:Description>
+  <rdf:Description rdf:about="SOM-4">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Social_Media"/>
+    <Ontologie_Folkwang-Bibliothek:Accountlink_Social-Media>https://www.instagram.com/folkwang_uni</Ontologie_Folkwang-Bibliothek:Accountlink_Social-Media>
+    <Ontologie_Folkwang-Bibliothek:Accountname_Social-Media>folkwang_uni</Ontologie_Folkwang-Bibliothek:Accountname_Social-Media>
+    <Ontologie_Folkwang-Bibliothek:Plattform_Social-Media>Instagram</Ontologie_Folkwang-Bibliothek:Plattform_Social-Media>
+  </rdf:Description>
+  
+  <!-- Sondersammlungen -->
+  
+  <rdf:Description rdf:about="SOS-6">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Sondersammlung"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Sondersammlung>Erich Oswald Sehlbach (1898-1985) war ein deutscher Komponist. Sein Nachlass wurde 2015 von der Stadtbibliothek Essen übernommen und kann auf Anfrage eingesehen werden.</Ontologie_Folkwang-Bibliothek:Beschreibung_Sondersammlung>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Sondersammlung>Nachlass Erich Sehlbach</Ontologie_Folkwang-Bibliothek:Bezeichnung_Sondersammlung>
+  </rdf:Description>
+  <rdf:Description rdf:about="SOS-8">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Sondersammlung"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Sondersammlung>Die Süddeutsche Schubertgesellschaft e.V. hat 2022 einen Teil ihrer Sammlung an die Bibliothek übergeben. Neben zahlreichen Noten von Robert Schumann, umfasst die Kollektion auch Biographien, Jahrbücher und sonstige Dokumente über den Komponisten.</Ontologie_Folkwang-Bibliothek:Beschreibung_Sondersammlung>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Sondersammlung>Schenkung der Schubert-Gesellschaft</Ontologie_Folkwang-Bibliothek:Bezeichnung_Sondersammlung>
+  </rdf:Description>
+  <rdf:Description rdf:about="SOS-4">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Sondersammlung"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Sondersammlung>Die Schenkung der Firma Vollrath umfasst ca. 5000 Schallplatten und eine unbekannte Anzahl von Audiokassetten von ca. Mitte der 1990er bis in die 2000er Jahre. Die Titel sind im Zettelkatalog im Unterschoss der Bibliothek Essen-Werden recherchierbar.</Ontologie_Folkwang-Bibliothek:Beschreibung_Sondersammlung>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Sondersammlung>Tonträgersammlung Vollrath - Schallplatten (Vinyl) und Audiokassetten</Ontologie_Folkwang-Bibliothek:Bezeichnung_Sondersammlung>
+  </rdf:Description>
+  <rdf:Description rdf:about="SOS-1">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Sondersammlung"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Sondersammlung>Die Sondersammlung ist eine Schenkung und repräsentiert mit über 4000 Schallplatten umfassend die Tonträgerproduktion der Jahre 1954-1967. Die Titel sind im Zettelkatalog im Unterschoss der Bibliothek Essen-Werden recherchierbar.</Ontologie_Folkwang-Bibliothek:Beschreibung_Sondersammlung>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Sondersammlung>Alfried Krupp von Bohlen und Halbach - Schallplattensammlung</Ontologie_Folkwang-Bibliothek:Bezeichnung_Sondersammlung>
+  </rdf:Description>
+  <rdf:Description rdf:about="SOS-7">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Sondersammlung"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Sondersammlung>Im Lesesaal der Bibliothek Essen-Werden (1. Obergeschoss) befinden sich die Gesamtausgaben der Werke verschiedener Komponist*innen. Diese sind alphabetisch nach Nachnamen aufgestellt. Es beginnt auf der linken Seite mit A und geht dann im Uhrzeigersinn weiter.</Ontologie_Folkwang-Bibliothek:Beschreibung_Sondersammlung>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Sondersammlung>Gesamtausgaben von Komponist*innen</Ontologie_Folkwang-Bibliothek:Bezeichnung_Sondersammlung>
+  </rdf:Description>
+  
+  <!-- Veranstaltungen --> 
+  
+   <rdf:Description rdf:about="VER-1">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Veranstaltung"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Veranstaltung>Jeden Donnerstag um 14:00 Uhr bieten wir eine 30-minütige Führung durch die Bibliothek am Campus Essen-Werden an. Eine Anmeldung ist nicht nötig. Treffpunkt ist die Ausleihtheke im Eingangsbereich</Ontologie_Folkwang-Bibliothek:Beschreibung_Veranstaltung>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Veranstaltung>Wöchentliche Führungen durch die Bibliothek am Campus Essen-Werden</Ontologie_Folkwang-Bibliothek:Bezeichnung_Veranstaltung>
+    <Ontologie_Folkwang-Bibliothek:Typ_Veranstaltung>Führung</Ontologie_Folkwang-Bibliothek:Typ_Veranstaltung>
+  </rdf:Description>
+  <rdf:Description rdf:about="VER-5">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Veranstaltung"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Veranstaltung>Lehrenden an Folkwang bieten wir an, Schulungen zu einzelnen Bibliotheksangeboten (z.B. Recherche, Online-Angebote, etc.) im Rahmen von Lehrveranstaltungen durchzuführen. Die Schulungen können in Absprache mit Ihnen an die Inhalte und Zielgruppen der Lehrveranstaltung angepasst werden. Bei Interesse melden Sie sich bitte frühzeitig  bei uns über bibliothek@folkwang-uni.de.</Ontologie_Folkwang-Bibliothek:Beschreibung_Veranstaltung>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Veranstaltung>Schulungen von Bibliotheksangeboten im Rahmen von Lehrveranstaltungen</Ontologie_Folkwang-Bibliothek:Bezeichnung_Veranstaltung>
+    <Ontologie_Folkwang-Bibliothek:Typ_Veranstaltung>Schulung</Ontologie_Folkwang-Bibliothek:Typ_Veranstaltung>
+  </rdf:Description>
+  <rdf:Description rdf:about="VER-2">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Veranstaltung"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Veranstaltung>Zu Beginn der Vorlesungszeit  bieten wir Führungen speziell für Erstsemester an. Die aktuellen Termine entnehmen Sie bitte den Informationen auf der Homepage der Bibliothek.</Ontologie_Folkwang-Bibliothek:Beschreibung_Veranstaltung>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Veranstaltung>Erstsemesterführungen</Ontologie_Folkwang-Bibliothek:Bezeichnung_Veranstaltung>
+    <Ontologie_Folkwang-Bibliothek:Typ_Veranstaltung>Führung</Ontologie_Folkwang-Bibliothek:Typ_Veranstaltung>
+  </rdf:Description>
+  <rdf:Description rdf:about="VER-6">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Veranstaltung"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Veranstaltung>Im Kursraum der Bibliothek auf der E-Learning-Plattform Moodle finden Sie weiterführende Informationen und Handouts für alle Schulungen, sowie Lehrmaterialien und Anleitungen zu einzelnen Themen. Den Kursraum finden Sie unter https://e-learning.folkwang-uni.de/course/view.php?id=1001.</Ontologie_Folkwang-Bibliothek:Beschreibung_Veranstaltung>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Veranstaltung>Moodle</Ontologie_Folkwang-Bibliothek:Bezeichnung_Veranstaltung>
+    <Ontologie_Folkwang-Bibliothek:Typ_Veranstaltung>Onlineschulung</Ontologie_Folkwang-Bibliothek:Typ_Veranstaltung>
+  </rdf:Description>
+  <rdf:Description rdf:about="VER-4">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Veranstaltung"/>
+    <Ontologie_Folkwang-Bibliothek:Beschreibung_Veranstaltung>Spezielle Führungen für Architekturinteressierte sind nach Vereinbarung möglich (auch auf Englisch). Bitte melden Sie sich dazu per E-Mail an bibliothek@folkwang.uni.de.</Ontologie_Folkwang-Bibliothek:Beschreibung_Veranstaltung>
+    <Ontologie_Folkwang-Bibliothek:Bezeichnung_Veranstaltung>Architekturführungen</Ontologie_Folkwang-Bibliothek:Bezeichnung_Veranstaltung>
+    <Ontologie_Folkwang-Bibliothek:Typ_Veranstaltung>Führung</Ontologie_Folkwang-Bibliothek:Typ_Veranstaltung>
+  </rdf:Description>
+  
+  <!-- Zweigstelle --> 
+  
+  <rdf:Description rdf:about="ZWB-2">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Zweigstelle"/>
+    <Ontologie_Folkwang-Bibliothek:Adresse_Zweigstelle>Martin-Kremmer-Straße 21, 45327 Essen</Ontologie_Folkwang-Bibliothek:Adresse_Zweigstelle>
+    <Ontologie_Folkwang-Bibliothek:Name_Zweigstelle>Essen Zollverein | Quartier Nord</Ontologie_Folkwang-Bibliothek:Name_Zweigstelle>
+    <Ontologie_Folkwang-Bibliothek:Sammlungsschwerpunkt>Kunst, Gestaltung, Design, Fotografie</Ontologie_Folkwang-Bibliothek:Sammlungsschwerpunkt>
+    <Ontologie_Folkwang-Bibliothek:Servicezeit>Mo: 10-13 Uhr, Di: 11-13 Uhr</Ontologie_Folkwang-Bibliothek:Servicezeit>
+    <Ontologie_Folkwang-Bibliothek:Oeffnungszeit>Mo: 10-13 Uhr, Di: 11-13 Uhr</Ontologie_Folkwang-Bibliothek:Oeffnungszeit>
+  </rdf:Description>
+  <rdf:Description rdf:about="ZWB-4">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Zweigstelle"/>
+    <Ontologie_Folkwang-Bibliothek:Adresse_Zweigstelle>Friederikastraße 4, 44789 Bochum</Ontologie_Folkwang-Bibliothek:Adresse_Zweigstelle>
+    <Ontologie_Folkwang-Bibliothek:Name_Zweigstelle>Theaterzentrum Bochum</Ontologie_Folkwang-Bibliothek:Name_Zweigstelle>
+    <Ontologie_Folkwang-Bibliothek:Sammlungsschwerpunkt>Theaterwissenschaft</Ontologie_Folkwang-Bibliothek:Sammlungsschwerpunkt>
+    <Ontologie_Folkwang-Bibliothek:Servicezeit>Servicezeiten nach Vereinbarung</Ontologie_Folkwang-Bibliothek:Servicezeit>
+    <Ontologie_Folkwang-Bibliothek:Oeffnungszeit>Öffnungszeiten nach Vereinbarung</Ontologie_Folkwang-Bibliothek:Oeffnungszeit>
+  </rdf:Description>
+  <rdf:Description rdf:about="ZWB-1">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Zweigstelle"/>
+    <Ontologie_Folkwang-Bibliothek:Adresse_Zweigstelle>Klemensborn 39, 45239 Essen</Ontologie_Folkwang-Bibliothek:Adresse_Zweigstelle>
+    <Ontologie_Folkwang-Bibliothek:Name_Zweigstelle>Essen-Werden</Ontologie_Folkwang-Bibliothek:Name_Zweigstelle>
+    <Ontologie_Folkwang-Bibliothek:Sammlungsschwerpunkt>Allgemeine Literatur, Musikalien, Musikwissenschaft, Tanz, Musiktheater</Ontologie_Folkwang-Bibliothek:Sammlungsschwerpunkt>
+    <Ontologie_Folkwang-Bibliothek:Servicezeit>Mo-Do: 9-18 Uhr, Fr: 9-16 Uhr</Ontologie_Folkwang-Bibliothek:Servicezeit>
+    <Ontologie_Folkwang-Bibliothek:Oeffnungszeit>Mo-Do: 9-19:30 Uhr, Fr: 9-18 Uhr</Ontologie_Folkwang-Bibliothek:Oeffnungszeit>
+    <Ontologie_Folkwang-Bibliothek:Architektur>Am 19. September 2012 wurde der Neubau der Bibliothek am Campus Essen-Werden eröffnet. Der Bau wurde ermöglicht durch eine Förderung der Alfried Krupp von Bohlen und Halbach-Stiftung, der Entwurf stammte vom Architekturbüro Max Dudler, Berlin. |&#13;&#13;
+Daten und Fakten zum Neubau: https://www.folkwang-uni.de/fileadmin/medien/Die%20Hochschule/Einzelbilder/Bibliothek/Daten%20und%20Fakten%20Neubau%20Bibliothek_klein.pdf |&#13;&#13;
+Bilder und mehr: https://www.folkwang-uni.de/home/hochschule/organisation/bibliothek/bibliotheksneubau</Ontologie_Folkwang-Bibliothek:Architektur>
+  </rdf:Description>
+  <rdf:Description rdf:about="ZWB-3">
+    <rdf:type rdf:resource="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Zweigstelle"/>
+    <Ontologie_Folkwang-Bibliothek:Adresse_Zweigstelle>Düsseldorfer Str. 19, 47051 Duisburg</Ontologie_Folkwang-Bibliothek:Adresse_Zweigstelle>
+    <Ontologie_Folkwang-Bibliothek:Name_Zweigstelle>Duisburg</Ontologie_Folkwang-Bibliothek:Name_Zweigstelle>
+    <Ontologie_Folkwang-Bibliothek:Sammlungsschwerpunkt>Alte Musik, Kammermusik, Neue Musik (Klavier)</Ontologie_Folkwang-Bibliothek:Sammlungsschwerpunkt>
+    <Ontologie_Folkwang-Bibliothek:Servicezeit>Mo-Fr: 9-13:30 Uhr</Ontologie_Folkwang-Bibliothek:Servicezeit>
+    <Ontologie_Folkwang-Bibliothek:Oeffnungszeit>Mo-Fr: 9-13:30 Uhr</Ontologie_Folkwang-Bibliothek:Oeffnungszeit>
+  </rdf:Description>
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksrichtlinie"/>
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Bibliotheksteam"/>
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Datenbank"/>
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Dienstleistungsangebot"/>
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Folkwang_Bibliothek"/>
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Medium"/>
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Social_Media"/>
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Sondersammlung"/>
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Thematische_Information"/>
+            <rdf:Description rdf:about="http://vera-m-s.de/MT/Ontologie_Folkwang-Bibliothek#Veranstaltung"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
